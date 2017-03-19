@@ -8,9 +8,12 @@ case $- in
       *) return;;
 esac
 
-###############
-# GIT ALIASES #
-###############
+###START OF EYKS TWEAKS###
+
+##################
+# GIT ALIASES     #
+#Credit to Nathan#
+##################
 
 #Add
 alias ga='git add'
@@ -77,13 +80,14 @@ alias grh='git reset --hard'
 #Status
 alias gs='git status'
 
-###############
+###################
 # Vanilla Aliases #
-###############
+###################
 
 #Main
 alias envset='. build/envsetup.sh'
 alias lva='lunch vanilla_angler-userdebug'
+alias fuckjack='./prebuilts/sdk/tools/jack-admin kill-server'
 
 #Make
 alias mvanilla='mka vanilla'
@@ -114,19 +118,20 @@ alias cdvcl='cdv && cd Vanilla_Changelog'
 alias epixel='export PIXEL=true'
 alias epublic='export PUBLIC=true'
 
-###############
+#################
 # OTHER ALIASES #
-###############
+#################
 
 alias nqq='notepadqq'
-alias fuckjack='./prebuilts/sdk/tools/jack-admin kill-server'
 
-#########
+###########
 # Exports #
-#########
+###########
 
 export ANDROID_JACK_VM_ARGS="-Xmx5g -Dfile.encoding=UTF-8 -XX:+TieredCompilation"
 export USE_CCACHE=true
+
+###END OF EYKS TWEAKS###
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
