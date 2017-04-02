@@ -11,9 +11,12 @@ esac
 ###START OF EYKS TWEAKS###
 
 ##################
-# GIT ALIASES     #
+# GIT ALIASES    #
 #Credit to Nathan#
 ##################
+
+#Hub
+alias git='hub'
 
 #Add
 alias ga='git add'
@@ -100,7 +103,7 @@ alias vanillafullrunsync='repo sync --force-sync && envset && lva && mvanilla'
 alias vanillafullrunsyncclean='repo sync --force-sync && envset && mclean && lva && mvanilla'
 
 #Directory
-alias cdv='cd ~/VNexus'
+alias cdv='cd ~/Vanilla'
 alias cdb='cdv && cd build'
 alias cdm='cdv && cd manifests'
 alias cdfwb='cdv && cd frameworks/base'
@@ -117,12 +120,14 @@ alias cdvcl='cdv && cd Vanilla_Changelog'
 #Export
 alias epixel='export PIXEL=true'
 alias epublic='export PUBLIC=true'
+alias estock='export PIXEL=false'
+alias etest='export PUBLIC=false'
 
 #################
 # OTHER ALIASES #
 #################
 
-alias nqq='notepadqq'
+#SOON
 
 ###########
 # Exports #
