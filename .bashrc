@@ -127,7 +127,7 @@ alias etest='export PUBLIC=false'
 # OTHER ALIASES #
 #################
 
-#SOON
+export PS1="\033[1;34m\h:\033[1;32m\W \033[1;34m\u\$ \e[m"
 
 ###########
 # Exports #
