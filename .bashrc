@@ -27,8 +27,8 @@ alias gbd='git branch -D'
 alias gb='git branch -v'
 
 #Checkout
-alias gch='git checkout'
-alias gcb='git checkout -b'
+alias gco='git checkout'
+alias gcob='git checkout -b'
 
 #Cherry-pick
 alias gcp='git cherry-pick'
@@ -41,6 +41,7 @@ alias gcpq='git cherry-pick --quit'
 #Commit
 alias gc='git commit'
 alias gca='git commit --amend'
+alias gcaa='git commit --amend -a'
 alias gcam='git commit -a -m'
 alias gcm='git commit -m'
 alias gcs='git commit --signoff'
@@ -63,7 +64,7 @@ alias gmg='git merge'
 alias gme='git merge -e'
 
 #Push
-alias gph='git push'
+alias gph='gpf'
 alias gpo='git push origin'
 alias gpf='git push --force'
 alias gpsu='git push --set-upstream origin'
@@ -105,23 +106,35 @@ alias vanillafullrunsyncclean='repo sync --force-sync && envset && mclean && lva
 #Directory
 alias cdv='cd ~/Vanilla'
 alias cdb='cdv && cd build'
-alias cdm='cdv && cd manifests'
+alias cddha='cdv && cd device/huawei/angler'
+alias cdfwav='cdv && cd frameworks/av'
 alias cdfwb='cdv && cd frameworks/base'
 alias cdfwc='cdv && cd frameworks/core'
 alias cdfwn='cdv && cd frameworks/native'
+alias cdfws='cdv && cd frameworks/support'
+alias cdm='cdv && cd manifests'
+alias cdpaPI='cdv && cd packages/apps/PackageInstaller'
+alias cdpaPC='cdv && cd packages/apps/PhoneCommon'
+alias cdpsOJ='cdv && cd packages/services/OmniJaws'
 alias cdpaS='cdv && cd packages/apps/Settings'
-alias cdvv='cdv && cd vendor/vanilla'
-alias cdvh='cdv && cd vendor/huawei'
-alias cddha='cdv && cd device/huawei/angler'
+alias cdpm='cdv && cd prebuilts/misc'
+alias cdpnl='cdv && cd prebuilts/ninja/linux-x86'
+alias cdrinit='cdv && cd rinit'
+alias cdvs='cdv && cd scripts'
 alias cdsc='cdv && cd system/core'
+alias cdse='cdv && cd system/extras'
 alias cdss='cdv && cd system/sepolicy'
+alias cdsv='cdv && cd system/vold'
 alias cdvcl='cdv && cd Vanilla_Changelog'
+alias cdvh='cdv && cd vendor/huawei'
+alias cdvv='cdv && cd vendor/vanilla'
 
 #Export
 alias epixel='export PIXEL=true'
 alias epublic='export PUBLIC=true'
 alias estock='export PIXEL=false'
 alias etest='export PUBLIC=false'
+alias eskye='export PUBLIC=skye'
 
 #################
 # OTHER ALIASES #
